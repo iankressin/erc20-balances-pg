@@ -1,0 +1,34 @@
+{
+  "name": "trillion-dollar-trading-bot-2",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsup src/index.ts --format esm --dts",
+    "lint": "biome check . --write",
+    "format": "biome format . --write",
+    "db:generate": "pnpm drizzle-kit generate",
+    "db:migrate": "pnpm drizzle-kit migrate",
+    "db:push": "pnpm drizzle-kit push"
+  },
+  "dependencies": {
+    "@subsquid/evm-abi": "0.3.1",
+    "@subsquid/evm-codec": "0.3.0",
+    "@subsquid/pipes": "^0.1.0-beta.10",
+    "better-sqlite3": "^12.5.0",
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.30.0",
+    "drizzle-orm": "^0.44.7",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.4",
+    "@types/node": "^22.14.1",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.2"
+  },
+  "packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef"
+}
